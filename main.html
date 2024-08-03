@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Sequencing Flows</title>
+        <link rel="stylesheet" href="./style.css" />
+    </head>
+    <body>
+        <noscript>This will need JS FOR SURE</noscript>
+        <div id="FLOWDIAG" oveflow="scroll" max-height="100vh">
+            <!-- <svg
+                ID="DRAWING"
+                 xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 0 500 1000"
+            ></svg> -->
+            <canvas id="DRAWING" width="500" height="700"></canvas>
+        </div>
+        <div id="CODEWRAPPER">
+            <textarea id="CODE"></textarea>
+        </div>
+        <div id="HELP">
+            <p>
+                Example JSON:
+                <br />
+                <span>
+                    {"lanes": ["Ramlal", "Shyamlal", "Murarilal"], "sequence":
+                    [{"from": "Ramlal", "to": "Shyamlal", "action": "Jump"},
+                    {"from": "Murarilal", "to": "Ramlal", "action": "Sit"},
+                    {"from": "Murarilal", "to": "Shyamlal", "action": "Jit"} ]}
+                </span>
+            </p>
+        </div>
+        <script src="./scripts.js"></script>
+    </body>
+</html>
