@@ -6,18 +6,6 @@
     </head>
     <body>
         <noscript>This will need JS FOR SURE</noscript>
-        <div id="FLOWDIAG" oveflow="scroll" max-height="100vh">
-            <!-- <svg
-                ID="DRAWING"
-                 xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                viewBox="0 0 500 1000"
-            ></svg> -->
-            <canvas id="DRAWING" width="500" height="700"></canvas>
-        </div>
-        <div id="CODEWRAPPER">
-            <textarea id="CODE"></textarea>
-        </div>
         <div id="HELP">
             <p>
                 Example JSON:
@@ -26,9 +14,27 @@
                     {"lanes": ["Ramlal", "Shyamlal", "Murarilal"], "sequence":
                     [{"from": "Ramlal", "to": "Shyamlal", "action": "Jump"},
                     {"from": "Murarilal", "to": "Ramlal", "action": "Sit"},
-                    {"from": "Murarilal", "to": "Shyamlal", "action": "Jit"} ]}
+                    {"from": "Murarilal", "to": "Murarilal", "action":
+                    "Meditate"} ]}
                 </span>
             </p>
+        </div>
+        <div class="GRID">
+            <div id="FLOWDIAG" oveflow="scroll" max-height="100vh">
+                <!-- <canvas id="DRAWING" width="900" height="700"></canvas> -->
+                <canvas id="DRAWING" width="900" height="700"></canvas>
+            </div>
+            <div id="CODEWRAPPER">
+                <textarea id="CODE"></textarea>
+                <button id="HELPBUTTON">HELP!</button>
+                <div id="LANES">
+                    <h3>Lanes</h3>
+                    <ul id="ListOfLanes"></ul>
+                </div>
+                <div id="SEQUENCE">
+                    <div id="ListOfSequence"></div>
+                </div>
+            </div>
         </div>
         <script src="./scripts.js"></script>
     </body>

@@ -2,3 +2,42 @@ body {
     overflow: hidden;
     margin: 0;
 }
+.GRID {
+    display: grid;
+    grid-template-columns: 80vw 15vw;
+    column-gap: 5vw;
+    grid-template-rows: 1;
+}
+/* #DRAWING {
+    width: 100%;
+    height: 100%;
+} */
+#FLOWDIAG {
+    grid-column-start: 1;
+}
+#CODEWRAPPER {
+    grid-column-start: 2;
+}
+#HELP {
+    float: right;
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+#HELP p {
+    background: #fff;
+    margin: 30vh;
+    padding: 10vh;
+}
+#CODE {
+    width: 100%;
+    height: 30%;
+    font: 14px black;
+}
+#HELPBUTTON {
+    width: 100%;
+}
